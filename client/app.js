@@ -61,7 +61,7 @@ angular.module('app', [
 				//slice from end at index of ]]
 				for (var l = 0; l < links.length; l++) {
 					var linksEndIndex = links[l].indexOf(']')
-					links[l] = link.substr(0, linksEndIndex)
+					links[l] = links.substr(0, linksEndIndex)
 				}
 				links.push(year)
 
